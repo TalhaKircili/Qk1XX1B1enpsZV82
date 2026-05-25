@@ -21,7 +21,7 @@ Inside the JavaScript code, a function called `egami_wohs()` exists.
 
 Running the function inside the browser console on the challenge page, reveals the following hidden image with details about the encryption:
 
-<img width="587" height="770" alt="image" src="https://github.com/user-attachments/assets/14c3175e-f136-4a44-891c-d182a3791e6c" />
+<img width="587" height="770" alt="image" src="image.png" />
 
 - encryption uses XOR
 - key length is 3 bytes

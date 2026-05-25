@@ -1,5 +1,5 @@
 from base64 import b64decode
-import re
+from re import compile
 
 CIPHERS = [
     "cx4jeE13FgUyYh4yIR8yNk0xLgwwYgQkYi4eFkBmJgtnJloxJ1gydVRicA42JltnIQg0J181I19idA41dFhmJF9ic1xlIQlhe10xJ1s2c11vdVVmJFVlcgljcwwy",
@@ -7,7 +7,7 @@ CIPHERS = [
 ]
 
 TARGET = b"CIT"
-FLAG_REGEX = re.compile(rb"CIT-[0-9a-f]{64}")
+FLAG_REGEX = compile(rb"CIT-[0-9a-f]{64}")
 
 def decrypt(cipher_bytes, key):
     return bytes(
